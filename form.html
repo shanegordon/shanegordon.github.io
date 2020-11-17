@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            font-family: 'poppins',sans-serif;
+        }
+         body
+         {
+             display: flex;
+             min-height: 100vh;
+             background-image: url("tekstura-material-linii-718.jpg");
+             background-size: cover;
+         }
+         .container
+         {
+             margin: auto;
+             width: 450px;
+             padding: 40px;
+             background-color: rgba(39, 39, 39, 0.829);
+             background-size: cover;
+             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         }
+         .container h2
+         {
+             color: rgb(255, 255, 255);
+             margin-bottom: 45px;
+         }
+         .input-field
+         {
+             position: relative;
+             height: 40px;
+             width: 100%;
+
+         }
+         .inpts
+         {
+             position: absolute;
+             background: transparent;
+             border: none;
+             box-shadow: none;
+             font-size: 16px;
+             color: #fff;
+             width: 100%;
+         }
+         .lbl
+         {
+             position: absolute;
+             top: 0;
+             left: 0;
+             color: rgb(190, 190, 190);
+             pointer-events: none;
+             display: inherit;
+             transition: 2s;
+         }
+         .inpts:focus + .lbl,
+         .inpts:valid + .lbl
+         {
+             transform: translateY(-35px);
+             font-size: 14px;
+             color: #fff;
+             background: #ff0077;
+             padding: 2px 6px;
+         }
+         .spns
+         {
+             position: absolute;
+             bottom: 0;
+             right: 0;
+             display: block;
+             background: #555;
+             width: 100%;
+             height: 2px;
+         }
+         .spns::before
+         {
+             content: '';
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             background: #00bcd4;
+             transform: scaleX(0);
+             transform-origin: right;
+             transition: transform 0.5s ease-in-out;
+         }
+         .inpts:focus ~ span::before,
+         .inpts:valid ~ span::before
+         {
+            transform: scaleX(1);
+            transform-origin: left;
+            transition: transform 0.5s ease-in-out;
+         }
+         .btn
+         {
+             margin-top: 20px;
+             border: none;
+             box-shadow: none;
+             padding: 10px 25px;
+             background: #333;
+             color: #fff;
+             font-size: 16px;
+             cursor: pointer;
+             
+         }
+         .btn:hover
+         {
+             background: #00bcd4;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Art School Registration</h2>
+        <form action="form - Copy.html">
+
+            <div class="input-field">
+                <input class="inpts" type="text" name="" required>
+                <label class="lbl">Name</label>
+                <span class="spns"></span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="input-field">
+                <input id="email" class="inpts" type="text" name="" required>
+                <label class="lbl">Email Address</label>
+                <span class="spns"></span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="input-field">
+                <input class="inpts" type="text" name="" required>
+                <label class="lbl">Home Address</label>
+                <span class="spns"></span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="input-field">
+                <input class="inpts" type="text" name="" required>
+                <label class="lbl">Contact Number</label>
+                <span class="spns"></span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+           <center><input type="submit" value="Register" name="" class="btn"></center>
+        </form>
+    </div>
+    <script>
+        function myFunction()
+        {
+            var x,
+        }
+    </script>
+</body>
+</html>
